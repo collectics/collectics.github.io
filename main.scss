@@ -1,16 +1,19 @@
-$color: blue;
-
-#woo {
+%base-format {
   text-align: center;
-  color: $color;
+}
+#woo {
+  @extend %base-format;
 }
 
 #intro {
-  text-align: center;
-  font-family: Arial, sans-serif;
-  color: $color;
+  @extend %base-format;
+  font-family: "Arial", sans-serif;
+  list-style-position: inside;
 }
 
+#description {
+  @extend %base-format;
+}
 nav {
      a {
        @media (min-width: 500px) {
@@ -19,9 +22,9 @@ nav {
        @media (max-width: 499px) {
           font-size: 125%;
        }
-       text-align: center;
-       border: solid black;
+       @extend %base-format;
        color: black;
+       border: solid black;
        font-style: italic;
        background-color: #ffffef;
        font-family: "IBM Plex Sans Condensed", sans-serif;

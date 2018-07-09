@@ -1,18 +1,15 @@
-#woo {
+nav a, #description, #intro, #woo {
   text-align: center;
-  color: blue;
 }
 
 #intro {
-  text-align: center;
-  font-family: Arial, sans-serif;
-  color: blue;
+  font-family: "Arial", sans-serif;
+  list-style-position: inside;
 }
 
 nav a {
-  text-align: center;
-  border: solid black;
   color: black;
+  border: solid black;
   font-style: italic;
   background-color: #ffffef;
   font-family: "IBM Plex Sans Condensed", sans-serif;
