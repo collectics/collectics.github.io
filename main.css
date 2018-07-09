@@ -10,8 +10,26 @@
 }
 
 nav a {
-  padding: 10px;
   text-align: center;
+  border: solid black;
+  color: black;
+  font-style: italic;
+  background-color: #ffffef;
+  font-family: "IBM Plex Sans Condensed", sans-serif;
+}
+@media (min-width: 500px) {
+  nav a {
+    font-size: 200%;
+  }
+}
+@media (max-width: 499px) {
+  nav a {
+    font-size: 125%;
+  }
+}
+nav a:hover {
+  font-weight: bold;
+  color: #D4AF37;
 }
 
 /*# sourceMappingURL=main.css.map */

@@ -13,12 +13,21 @@ $color: blue;
 
 nav {
      a {
+       @media (min-width: 500px) {
+          font-size: 200%;
+       }
+       @media (max-width: 499px) {
+          font-size: 125%;
+       }
        text-align: center;
+       border: solid black;
        color: black;
-       border: solid blue;
-     }
-     a:hover {
-        font-weight: bold;
-        background-color: #ffffef;
+       font-style: italic;
+       background-color: #ffffef;
+       font-family: "IBM Plex Sans Condensed", sans-serif;
+       &:hover {
+         font-weight: bold;
+         color: #D4AF37;
+       }
      }
 }
