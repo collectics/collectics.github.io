@@ -11,7 +11,14 @@ $color: blue;
   color: $color;
 }
 
-nav a {
-  padding: 10px;
-  text-align: center;
+nav {
+     a {
+       text-align: center;
+       color: black;
+       border: solid blue;
+     }
+     a:hover {
+        font-weight: bold;
+        background-color: #ffffef;
+     }
 }
