@@ -1,9 +1,10 @@
-.page-header, #intro .btn, #description {
+.page-header, #description, #intro .btn {
   font-family: "Roboto", sans-serif;
   text-align: center;
   color: black;
 }
 
+/* Nav Bar */
 nav {
   padding-top: 15px;
 }
@@ -31,8 +32,8 @@ nav a:hover {
 }
 
 /* Home Page */
-.listofthings {
-  font-style: italic;
+#index {
+  background-color: #f2fdff;
 }
 
 #intro {
@@ -63,6 +64,10 @@ nav a:hover {
   background-color: lightblue;
 }
 
+.listofthings {
+  font-style: italic;
+}
+
 /* Other Pages */
 .page-header small {
   color: gray;
@@ -71,6 +76,16 @@ nav a:hover {
 /* Meme Page */
 #memepage {
   background: linear-gradient(to right, red, orange, yellow, green, blue, indigo, violet);
+}
+
+/* About Me Page */
+#aboutme {
+  background-color: #eafffb;
+}
+
+/*Projects Page */
+#projects {
+  background-color: #ffeffc;
 }
 
 /*# sourceMappingURL=main.css.map */

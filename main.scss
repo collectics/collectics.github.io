@@ -6,6 +6,8 @@
 
 $min-width: 500px;
 $max-width: 499px;
+
+/* Nav Bar */
 nav {
   padding-top: 15px;
      a {
@@ -29,14 +31,9 @@ nav {
 }
 
 /* Home Page */
-#description {
-  @extend %main-format;
+#index {
+  background-color: #f2fdff;
 }
-
-.listofthings {
-  font-style: italic;
-}
-
 #intro {
   @media (min-width: $min-width) {
     margin-left: 20%;
@@ -60,7 +57,12 @@ nav {
     @extend %main-format;
     background-color: lightblue;
   }
-
+}
+.listofthings {
+  font-style: italic;
+}
+#description {
+  @extend %main-format;
 }
 
 /* Other Pages */
@@ -74,4 +76,16 @@ nav {
 /* Meme Page */
 #memepage {
   background: linear-gradient(to right, red,orange,yellow,green,blue,indigo,violet);
+}
+
+
+
+
+/* About Me Page */
+#aboutme {
+  background-color: #eafffb;
+}
+/*Projects Page */
+#projects {
+  background-color: #ffeffc;
 }
