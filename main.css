@@ -22,7 +22,7 @@ nav a {
 }
 @media (max-width: 499px) {
   nav a {
-    font-size: 125%;
+    font-size: 105%;
   }
 }
 nav a:hover {
@@ -32,14 +32,32 @@ nav a:hover {
 
 /* Home Page */
 .listofthings {
-  text-decoration: underline;
+  font-style: italic;
 }
 
 #intro {
   margin: 1%;
 }
+@media (min-width: 500px) {
+  #intro {
+    margin-left: 10%;
+    margin-right: 10%;
+  }
+}
 #intro h1 {
   font-size: 300%;
+}
+@media (min-width: 500px) {
+  #intro img {
+    width: 15%;
+    height: 15%;
+  }
+}
+@media (max-width: 499px) {
+  #intro img {
+    width: 50%;
+    height: 50%;
+  }
 }
 #intro .btn {
   background-color: lightblue;

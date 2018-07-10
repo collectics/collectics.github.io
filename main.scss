@@ -4,14 +4,16 @@
   color: black;
 }
 
+$min-width: 500px;
+$max-width: 499px;
 nav {
   padding-top: 15px;
      a {
-       @media (min-width: 500px) {
+       @media (min-width: $min-width) {
           font-size: 200%;
        }
-       @media (max-width: 499px) {
-          font-size: 125%;
+       @media (max-width: $max-width) {
+          font-size: 105%;
        }
        text-align: center;
        color: black;
@@ -32,18 +34,33 @@ nav {
 }
 
 .listofthings {
-  text-decoration: underline;
+  font-style: italic;
 }
 
 #intro {
+  @media (min-width: $min-width) {
+    margin-left: 10%;
+    margin-right: 10%;
+  }
   margin: 1%;
   h1 {
     font-size: 300%;
+  }
+  img {
+    @media (min-width: $min-width) {
+      width: 15%;
+      height: 15%;
+    }
+    @media (max-width: $max-width) {
+      width: 50%;
+      height: 50%;
+    }
   }
   .btn {
     @extend %main-format;
     background-color: lightblue;
   }
+
 }
 
 /* Other Pages */
