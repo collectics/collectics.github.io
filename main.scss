@@ -1,18 +1,11 @@
-%base-format {
+%main-format {
+  font-family: "Roboto", sans-serif;
   text-align: center;
-}
-
-#intro {
-  @extend %base-format;
-  font-family: "Arial", sans-serif;
-  list-style-position: inside;
-}
-
-#description {
-  @extend %base-format;
+  color: black;
 }
 
 nav {
+  padding-top: 15px;
      a {
        @media (min-width: 500px) {
           font-size: 200%;
@@ -20,7 +13,7 @@ nav {
        @media (max-width: 499px) {
           font-size: 125%;
        }
-       @extend %base-format;
+       text-align: center;
        color: black;
        border: solid black;
        font-style: italic;
@@ -31,4 +24,37 @@ nav {
          color: #42b3f4;
        }
      }
+}
+
+/* Home Page */
+#description {
+  @extend %main-format;
+}
+
+.listofthings {
+  text-decoration: underline;
+}
+
+#intro {
+  margin: 1%;
+  h1 {
+    font-size: 300%;
+  }
+  .btn {
+    @extend %main-format;
+    background-color: lightblue;
+  }
+}
+
+/* Other Pages */
+.page-header {
+  @extend %main-format;
+  small {
+    color: gray;
+  }
+}
+
+/* Meme Page */
+#memepage {
+  background: linear-gradient(to right, red,orange,yellow,green,blue,indigo,violet);
 }

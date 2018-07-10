@@ -1,13 +1,14 @@
-nav a, #description, #intro, #woo {
+.page-header, #intro .btn, #description {
+  font-family: "Roboto", sans-serif;
   text-align: center;
+  color: black;
 }
 
-#intro {
-  font-family: "Arial", sans-serif;
-  list-style-position: inside;
+nav {
+  padding-top: 15px;
 }
-
 nav a {
+  text-align: center;
   color: black;
   border: solid black;
   font-style: italic;
@@ -27,6 +28,31 @@ nav a {
 nav a:hover {
   font-weight: bold;
   color: #42b3f4;
+}
+
+/* Home Page */
+.listofthings {
+  text-decoration: underline;
+}
+
+#intro {
+  margin: 1%;
+}
+#intro h1 {
+  font-size: 300%;
+}
+#intro .btn {
+  background-color: lightblue;
+}
+
+/* Other Pages */
+.page-header small {
+  color: gray;
+}
+
+/* Meme Page */
+#memepage {
+  background: linear-gradient(to right, red, orange, yellow, green, blue, indigo, violet);
 }
 
 /*# sourceMappingURL=main.css.map */
