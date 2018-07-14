@@ -1,6 +1,5 @@
 .page-header, #description, #intro .btn {
   font-family: "Roboto", sans-serif;
-  text-align: center;
   color: black;
 }
 
@@ -16,15 +15,15 @@ nav a {
   background-color: #ffffef;
   font-family: "IBM Plex Sans Condensed", sans-serif;
 }
-@media only screen and (min-device-width: 375px) and (max-device-width: 667px) {
+@media only screen and (min-width: 375px) and (max-width: 667px) {
   nav a {
     /* taken from http://stephen.io/mediaqueries/#iPhone */
     /* if the screen is an iphone (6, 7, 8) */
     /* for purposes of this project i won't try to branch out to tablets. new to this responsive design thing */
-    font-size: 250%;
+    font-size: 300%;
   }
 }
-@media (min-device-width: 668px) {
+@media (min-width: 668px) {
   nav a {
     font-size: 200%;
   }
@@ -42,19 +41,19 @@ nav a:hover {
 #intro {
   margin: 1%;
 }
-@media (min-device-width: 668px) {
+@media (min-width: 668px) {
   #intro {
     margin-left: 15%;
     margin-right: 15%;
   }
 }
-@media (min-device-width: 668px) {
+@media (min-width: 668px) {
   #intro img {
     width: 20%;
     height: 20%;
   }
 }
-@media only screen and (min-device-width: 375px) and (max-device-width: 667px) {
+@media only screen and (min-width: 375px) and (max-width: 667px) {
   #intro img {
     width: 40%;
     height: 40%;
@@ -69,10 +68,15 @@ nav a:hover {
   font-style: italic;
 }
 
+#description {
+  text-align: center;
+}
+
 /* ~~~~ */
 /* All Pages */
 .page-header {
   /* not for homepage of course */
+  text-align: center;
 }
 .page-header small {
   color: gray;
@@ -82,12 +86,12 @@ h1 {
   font-size: 300%;
 }
 
-@media only screen and (min-device-width: 375px) and (max-device-width: 667px) {
+@media only screen and (min-width: 375px) and (max-width: 667px) {
   p, h5, ul > li {
     font-size: 250%;
   }
 }
-@media (min-device-width: 668px) {
+@media (min-width: 668px) {
   p, h5, ul > li {
     font-size: 150%;
   }

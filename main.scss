@@ -1,25 +1,23 @@
 %main-format {
   font-family: "Roboto", sans-serif;
-  text-align: center;
   color: black;
 }
 
 $min-iphone-width: 375px;
 $max-iphone-width: 667px;
-
 $min-comp-width: 668px;
 
 /* Nav Bar */
 nav {
   padding-top: 15px;
      a {
-       @media only screen and (min-device-width : $min-iphone-width) and (max-device-width : $max-iphone-width) {
+       @media only screen and (min-width : $min-iphone-width) and (max-width : $max-iphone-width) {
          /* taken from http://stephen.io/mediaqueries/#iPhone */
          /* if the screen is an iphone (6, 7, 8) */
          /* for purposes of this project i won't try to branch out to tablets. new to this responsive design thing */
-          font-size: 250%;
+          font-size: 300%;
        }
-       @media (min-device-width: $min-comp-width) {
+       @media (min-width: $min-comp-width) {
           font-size: 200%;
        }
        text-align: center;
@@ -40,17 +38,17 @@ nav {
   background-color: #f2fdff;
 }
 #intro {
-  @media (min-device-width: $min-comp-width) {
+  @media (min-width: $min-comp-width) {
     margin-left: 15%;
     margin-right: 15%;
   }
   margin: 1%;
   img {
-    @media (min-device-width: $min-comp-width) {
+    @media (min-width: $min-comp-width) {
       width: 20%;
       height: 20%;
     }
-    @media only screen and (min-device-width : $min-iphone-width) and (max-device-width : $max-iphone-width) {
+    @media only screen and (min-width : $min-iphone-width) and (max-width : $max-iphone-width) {
       width: 40%;
       height: 40%;
     }
@@ -66,12 +64,14 @@ nav {
 }
 #description {
   @extend %main-format;
+  text-align: center;
 }
 
 /* ~~~~ */
 /* All Pages */
 .page-header { /* not for homepage of course */
   @extend %main-format;
+  text-align: center;
   small {
     color: gray;
   }
@@ -82,10 +82,10 @@ h1 {
 }
 
 p, h5, ul > li {
-  @media only screen and (min-device-width : $min-iphone-width) and (max-device-width : $max-iphone-width) {
+  @media only screen and (min-width : $min-iphone-width) and (max-width : $max-iphone-width) {
     font-size: 250%;
   }
-  @media (min-device-width: $min-comp-width) {
+  @media (min-width: $min-comp-width) {
     font-size: 150%;
   }
 }
