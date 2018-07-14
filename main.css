@@ -1,6 +1,12 @@
-.page-header, #description, #intro .btn {
+p, h5, ul > li, .page-header, #description, #intro .btn {
   font-family: "Roboto", sans-serif;
   color: black;
+}
+
+nav a {
+  font-family: "IBM Plex Sans Condensed", sans-serif;
+  color: black;
+  text-align: center;
 }
 
 /* Nav Bar */
@@ -8,11 +14,10 @@ nav {
   padding-top: 15px;
 }
 nav a {
-  text-align: center;
-  color: black;
   border: solid black;
   font-style: italic;
   background-color: #ffffef;
+<<<<<<< HEAD
   font-family: "IBM Plex Sans Condensed", sans-serif;
 }
 @media only screen and (min-width: 375px) and (max-width: 667px) {
@@ -27,6 +32,8 @@ nav a {
   nav a {
     font-size: 200%;
   }
+=======
+>>>>>>> responsive
 }
 nav a:hover {
   font-weight: bold;
@@ -55,6 +62,9 @@ nav a:hover {
 }
 @media only screen and (min-width: 375px) and (max-width: 667px) {
   #intro img {
+    /* taken from http://stephen.io/mediaqueries/#iPhone */
+    /* if the screen is an iphone (6, 7, 8) */
+    /* for purposes of this project i won't try to branch out to tablets. new to this responsive design thing */
     width: 40%;
     height: 40%;
   }
@@ -81,9 +91,8 @@ nav a:hover {
 .page-header small {
   color: gray;
 }
-
-h1 {
-  font-size: 300%;
+.page-header h1 {
+  font-size: 400%;
 }
 
 @media only screen and (min-width: 375px) and (max-width: 667px) {

@@ -3,6 +3,12 @@
   color: black;
 }
 
+%second-format {
+  font-family: "IBM Plex Sans Condensed", sans-serif;
+  color: black;
+  text-align: center;
+}
+
 $min-iphone-width: 375px;
 $max-iphone-width: 667px;
 $min-comp-width: 668px;
@@ -11,6 +17,7 @@ $min-comp-width: 668px;
 nav {
   padding-top: 15px;
      a {
+<<<<<<< HEAD
        @media only screen and (min-width : $min-iphone-width) and (max-width : $max-iphone-width) {
          /* taken from http://stephen.io/mediaqueries/#iPhone */
          /* if the screen is an iphone (6, 7, 8) */
@@ -22,10 +29,12 @@ nav {
        }
        text-align: center;
        color: black;
+=======
+       @extend %second-format;
+>>>>>>> responsive
        border: solid black;
        font-style: italic;
        background-color: #ffffef;
-       font-family: "IBM Plex Sans Condensed", sans-serif;
        &:hover {
          font-weight: bold;
          color: #42b3f4;
@@ -49,6 +58,12 @@ nav {
       height: 20%;
     }
     @media only screen and (min-width : $min-iphone-width) and (max-width : $max-iphone-width) {
+<<<<<<< HEAD
+=======
+      /* taken from http://stephen.io/mediaqueries/#iPhone */
+      /* if the screen is an iphone (6, 7, 8) */
+      /* for purposes of this project i won't try to branch out to tablets. new to this responsive design thing */
+>>>>>>> responsive
       width: 40%;
       height: 40%;
     }
@@ -75,13 +90,16 @@ nav {
   small {
     color: gray;
   }
-}
-
-h1 {
-  font-size: 300%;
+  h1 {
+    font-size: 400%;
+  }
 }
 
 p, h5, ul > li {
+<<<<<<< HEAD
+=======
+  @extend %main-format;
+>>>>>>> responsive
   @media only screen and (min-width : $min-iphone-width) and (max-width : $max-iphone-width) {
     font-size: 250%;
   }
