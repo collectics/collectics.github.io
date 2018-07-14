@@ -1,7 +1,12 @@
 %main-format {
   font-family: "Roboto", sans-serif;
-  text-align: center;
   color: black;
+}
+
+%second-format {
+  font-family: "IBM Plex Sans Condensed", sans-serif;
+  color: black;
+  text-align: center;
 }
 
 $min-iphone-width: 375px;
@@ -13,21 +18,10 @@ $min-comp-width: 668px;
 nav {
   padding-top: 15px;
      a {
-       @media only screen and (min-device-width : $min-iphone-width) and (max-device-width : $max-iphone-width) {
-         /* taken from http://stephen.io/mediaqueries/#iPhone */
-         /* if the screen is an iphone (6, 7, 8) */
-         /* for purposes of this project i won't try to branch out to tablets. new to this responsive design thing */
-          font-size: 250%;
-       }
-       @media (min-device-width: $min-comp-width) {
-          font-size: 200%;
-       }
-       text-align: center;
-       color: black;
+       @extend %second-format;
        border: solid black;
        font-style: italic;
        background-color: #ffffef;
-       font-family: "IBM Plex Sans Condensed", sans-serif;
        &:hover {
          font-weight: bold;
          color: #42b3f4;
@@ -40,17 +34,20 @@ nav {
   background-color: #f2fdff;
 }
 #intro {
-  @media (min-device-width: $min-comp-width) {
+  @media (min-width: $min-comp-width) {
     margin-left: 15%;
     margin-right: 15%;
   }
   margin: 1%;
   img {
-    @media (min-device-width: $min-comp-width) {
+    @media (min-width: $min-comp-width) {
       width: 20%;
       height: 20%;
     }
-    @media only screen and (min-device-width : $min-iphone-width) and (max-device-width : $max-iphone-width) {
+    @media only screen and (min-width : $min-iphone-width) and (max-width : $max-iphone-width) {
+      /* taken from http://stephen.io/mediaqueries/#iPhone */
+      /* if the screen is an iphone (6, 7, 8) */
+      /* for purposes of this project i won't try to branch out to tablets. new to this responsive design thing */
       width: 40%;
       height: 40%;
     }
@@ -66,26 +63,28 @@ nav {
 }
 #description {
   @extend %main-format;
+  text-align: center;
 }
 
 /* ~~~~ */
 /* All Pages */
 .page-header { /* not for homepage of course */
   @extend %main-format;
+  text-align: center;
   small {
     color: gray;
   }
-}
-
-h1 {
-  font-size: 300%;
+  h1 {
+    font-size: 400%;
+  }
 }
 
 p, h5, ul > li {
-  @media only screen and (min-device-width : $min-iphone-width) and (max-device-width : $max-iphone-width) {
+  @extend %main-format;
+  @media only screen and (min-width : $min-iphone-width) and (max-width : $max-iphone-width) {
     font-size: 250%;
   }
-  @media (min-device-width: $min-comp-width) {
+  @media (min-width: $min-comp-width) {
     font-size: 150%;
   }
 }
