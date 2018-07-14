@@ -6,15 +6,17 @@
 
 $min-iphone-width: 375px;
 $max-iphone-width: 667px;
+$min-comp-width: 668px;
 
 /* Nav Bar */
 nav {
   padding-top: 15px;
      a {
-       @media (min-width: $max-iphone-width) {
+       @media only screen and (min-device-width : $min-iphone-width) and (max-device-width : $max-iphone-width) {
+         /* taken from http://stephen.io/mediaqueries/#iPhone */
           font-size: 200%;
        }
-       @media (max-width: $max-iphone-width) {
+       @media (min-width: $min-comp-width) {
           font-size: 105%;
        }
        text-align: center;
@@ -35,22 +37,22 @@ nav {
   background-color: #f2fdff;
 }
 #intro {
-  @media (min-width: $max-iphone-width) {
-    margin-left: 20%;
-    margin-right: 20%;
+  @media (min-width: $min-comp-width) {
+    margin-left: 15%;
+    margin-right: 15%;
   }
   margin: 1%;
   h1 {
     font-size: 300%;
   }
   img {
-    @media (min-width: $max-iphone-width) {
-      width: 15%;
-      height: 15%;
+    @media (min-width: $min-comp-width) {
+      width: 20%;
+      height: 20%;
     }
     @media only screen and (min-device-width : $min-iphone-width) and (max-device-width : $max-iphone-width) {
-      width: 50%;
-      height: 50%;
+      width: 40%;
+      height: 40%;
     }
   }
   .btn {

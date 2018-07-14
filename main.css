@@ -16,12 +16,13 @@ nav a {
   background-color: #ffffef;
   font-family: "IBM Plex Sans Condensed", sans-serif;
 }
-@media (min-width: 667px) {
+@media only screen and (min-device-width: 375px) and (max-device-width: 667px) {
   nav a {
+    /* taken from http://stephen.io/mediaqueries/#iPhone */
     font-size: 200%;
   }
 }
-@media (max-width: 667px) {
+@media (min-width: 668px) {
   nav a {
     font-size: 105%;
   }
@@ -39,25 +40,25 @@ nav a:hover {
 #intro {
   margin: 1%;
 }
-@media (min-width: 667px) {
+@media (min-width: 668px) {
   #intro {
-    margin-left: 20%;
-    margin-right: 20%;
+    margin-left: 15%;
+    margin-right: 15%;
   }
 }
 #intro h1 {
   font-size: 300%;
 }
-@media (min-width: 667px) {
+@media (min-width: 668px) {
   #intro img {
-    width: 15%;
-    height: 15%;
+    width: 20%;
+    height: 20%;
   }
 }
 @media only screen and (min-device-width: 375px) and (max-device-width: 667px) {
   #intro img {
-    width: 50%;
-    height: 50%;
+    width: 40%;
+    height: 40%;
   }
 }
 #intro .btn {
