@@ -16,11 +16,12 @@ $min-comp-width: 668px;
 /* Nav Bar */
 nav {
   padding-top: 15px;
-     a {
+     div a {
        @extend %second-format;
        border: solid black;
        font-style: italic;
        background-color: #ffffef;
+       font-size: 200%;
        &:hover {
          font-weight: bold;
          color: #42b3f4;
@@ -37,7 +38,6 @@ nav {
     margin-left: 15%;
     margin-right: 15%;
   }
-  margin: 1%;
   img {
     @media (min-device-width: $min-comp-width) {
       width: 20%;
@@ -51,6 +51,7 @@ nav {
       height: 40%;
     }
   }
+  margin: 1%;
   .btn {
     @extend %main-format;
     background-color: lightblue;
@@ -63,6 +64,7 @@ nav {
 #description {
   @extend %main-format;
   text-align: center;
+
 }
 
 /* ~~~~ */
@@ -78,7 +80,7 @@ nav {
   }
 }
 
-p, h5, ul > li {
+div > p, div > h5, ul > li {
   @extend %main-format;
   @media only screen and (min-device-width : $min-iphone-width) and (max-device-width : $max-iphone-width) {
     font-size: 250%;

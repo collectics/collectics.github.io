@@ -1,9 +1,9 @@
-p, h5, ul > li, .page-header, #description, #intro .btn {
+div > p, div > h5, ul > li, .page-header, #description, #intro .btn {
   font-family: "Roboto", sans-serif;
   color: black;
 }
 
-nav a {
+nav div a {
   font-family: "IBM Plex Sans Condensed", sans-serif;
   color: black;
   text-align: center;
@@ -13,12 +13,13 @@ nav a {
 nav {
   padding-top: 15px;
 }
-nav a {
+nav div a {
   border: solid black;
   font-style: italic;
   background-color: #ffffef;
+  font-size: 200%;
 }
-nav a:hover {
+nav div a:hover {
   font-weight: bold;
   color: #42b3f4;
 }
@@ -79,12 +80,12 @@ nav a:hover {
 }
 
 @media only screen and (min-device-width: 375px) and (max-device-width: 667px) {
-  p, h5, ul > li {
+  div > p, div > h5, ul > li {
     font-size: 250%;
   }
 }
 @media (min-device-width: 668px) {
-  p, h5, ul > li {
+  div > p, div > h5, ul > li {
     font-size: 150%;
   }
 }
