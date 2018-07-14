@@ -4,17 +4,17 @@
   color: black;
 }
 
-$min-width: 641px;
-$max-width: 640px;
+$min-iphone-width: 375px;
+$max-iphone-width: 667px;
 
 /* Nav Bar */
 nav {
   padding-top: 15px;
      a {
-       @media (min-width: $min-width) {
+       @media (min-width: $max-iphone-width) {
           font-size: 200%;
        }
-       @media (max-width: $max-width) {
+       @media (max-width: $max-iphone-width) {
           font-size: 105%;
        }
        text-align: center;
@@ -35,7 +35,7 @@ nav {
   background-color: #f2fdff;
 }
 #intro {
-  @media (min-width: $min-width) {
+  @media (min-width: $max-iphone-width) {
     margin-left: 20%;
     margin-right: 20%;
   }
@@ -44,11 +44,11 @@ nav {
     font-size: 300%;
   }
   img {
-    @media (min-width: $min-width) {
+    @media (min-width: $max-iphone-width) {
       width: 15%;
       height: 15%;
     }
-    @media (max-width: $max-width) {
+    @media only screen and (min-device-width : $min-iphone-width) and (max-device-width : $max-iphone-width) {
       width: 50%;
       height: 50%;
     }
