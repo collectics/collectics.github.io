@@ -19,6 +19,8 @@ nav a {
 @media only screen and (min-device-width: 375px) and (max-device-width: 667px) {
   nav a {
     /* taken from http://stephen.io/mediaqueries/#iPhone */
+    /* if the screen is an iphone (6, 7, 8) */
+    /* for purposes of this project i won't try to branch out to tablets. new to this responsive design thing */
     font-size: 200%;
   }
 }
@@ -40,7 +42,7 @@ nav a:hover {
 #intro {
   margin: 1%;
 }
-@media (min-width: 668px) {
+@media (min-device-width: 668px) {
   #intro {
     margin-left: 15%;
     margin-right: 15%;
@@ -49,7 +51,7 @@ nav a:hover {
 #intro h1 {
   font-size: 300%;
 }
-@media (min-width: 668px) {
+@media (min-device-width: 668px) {
   #intro img {
     width: 20%;
     height: 20%;

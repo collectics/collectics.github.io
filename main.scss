@@ -6,6 +6,7 @@
 
 $min-iphone-width: 375px;
 $max-iphone-width: 667px;
+
 $min-comp-width: 668px;
 
 /* Nav Bar */
@@ -14,6 +15,8 @@ nav {
      a {
        @media only screen and (min-device-width : $min-iphone-width) and (max-device-width : $max-iphone-width) {
          /* taken from http://stephen.io/mediaqueries/#iPhone */
+         /* if the screen is an iphone (6, 7, 8) */
+         /* for purposes of this project i won't try to branch out to tablets. new to this responsive design thing */
           font-size: 200%;
        }
        @media (min-width: $min-comp-width) {
@@ -37,7 +40,7 @@ nav {
   background-color: #f2fdff;
 }
 #intro {
-  @media (min-width: $min-comp-width) {
+  @media (min-device-width: $min-comp-width) {
     margin-left: 15%;
     margin-right: 15%;
   }
@@ -46,7 +49,7 @@ nav {
     font-size: 300%;
   }
   img {
-    @media (min-width: $min-comp-width) {
+    @media (min-device-width: $min-comp-width) {
       width: 20%;
       height: 20%;
     }
