@@ -17,10 +17,10 @@ nav {
          /* taken from http://stephen.io/mediaqueries/#iPhone */
          /* if the screen is an iphone (6, 7, 8) */
          /* for purposes of this project i won't try to branch out to tablets. new to this responsive design thing */
-          font-size: 200%;
+          font-size: 300%;
        }
-       @media (min-width: $min-comp-width) {
-          font-size: 105%;
+       @media (min-device-width: $min-comp-width) {
+          font-size: 205%;
        }
        text-align: center;
        color: black;
@@ -48,6 +48,14 @@ nav {
   h1 {
     font-size: 300%;
   }
+  p, h5 {
+    @media only screen and (min-device-width : $min-iphone-width) and (max-device-width : $max-iphone-width) {
+      font-size: 250%;
+    }
+    @media (min-device-width: $min-comp-width) {
+      font-size: 150%;
+    }
+  }
   img {
     @media (min-device-width: $min-comp-width) {
       width: 20%;
@@ -61,6 +69,7 @@ nav {
   .btn {
     @extend %main-format;
     background-color: lightblue;
+    font-size: 150%;
   }
 }
 .listofthings {
