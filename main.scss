@@ -17,10 +17,10 @@ nav {
          /* taken from http://stephen.io/mediaqueries/#iPhone */
          /* if the screen is an iphone (6, 7, 8) */
          /* for purposes of this project i won't try to branch out to tablets. new to this responsive design thing */
-          font-size: 300%;
+          font-size: 250%;
        }
        @media (min-device-width: $min-comp-width) {
-          font-size: 205%;
+          font-size: 200%;
        }
        text-align: center;
        color: black;
@@ -45,17 +45,6 @@ nav {
     margin-right: 15%;
   }
   margin: 1%;
-  h1 {
-    font-size: 300%;
-  }
-  p, h5 {
-    @media only screen and (min-device-width : $min-iphone-width) and (max-device-width : $max-iphone-width) {
-      font-size: 250%;
-    }
-    @media (min-device-width: $min-comp-width) {
-      font-size: 150%;
-    }
-  }
   img {
     @media (min-device-width: $min-comp-width) {
       width: 20%;
@@ -79,11 +68,25 @@ nav {
   @extend %main-format;
 }
 
-/* Other Pages */
-.page-header {
+/* ~~~~ */
+/* All Pages */
+.page-header { /* not for homepage of course */
   @extend %main-format;
   small {
     color: gray;
+  }
+}
+
+h1 {
+  font-size: 300%;
+}
+
+p, h5, ul > li {
+  @media only screen and (min-device-width : $min-iphone-width) and (max-device-width : $max-iphone-width) {
+    font-size: 250%;
+  }
+  @media (min-device-width: $min-comp-width) {
+    font-size: 150%;
   }
 }
 
@@ -91,9 +94,6 @@ nav {
 #memepage {
   background: linear-gradient(to right, red,orange,yellow,green,blue,indigo,violet);
 }
-
-
-
 
 /* About Me Page */
 #aboutme {

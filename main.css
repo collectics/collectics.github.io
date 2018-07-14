@@ -21,12 +21,12 @@ nav a {
     /* taken from http://stephen.io/mediaqueries/#iPhone */
     /* if the screen is an iphone (6, 7, 8) */
     /* for purposes of this project i won't try to branch out to tablets. new to this responsive design thing */
-    font-size: 300%;
+    font-size: 250%;
   }
 }
 @media (min-device-width: 668px) {
   nav a {
-    font-size: 205%;
+    font-size: 200%;
   }
 }
 nav a:hover {
@@ -46,19 +46,6 @@ nav a:hover {
   #intro {
     margin-left: 15%;
     margin-right: 15%;
-  }
-}
-#intro h1 {
-  font-size: 300%;
-}
-@media only screen and (min-device-width: 375px) and (max-device-width: 667px) {
-  #intro p, #intro h5 {
-    font-size: 250%;
-  }
-}
-@media (min-device-width: 668px) {
-  #intro p, #intro h5 {
-    font-size: 150%;
   }
 }
 @media (min-device-width: 668px) {
@@ -82,9 +69,28 @@ nav a:hover {
   font-style: italic;
 }
 
-/* Other Pages */
+/* ~~~~ */
+/* All Pages */
+.page-header {
+  /* not for homepage of course */
+}
 .page-header small {
   color: gray;
+}
+
+h1 {
+  font-size: 300%;
+}
+
+@media only screen and (min-device-width: 375px) and (max-device-width: 667px) {
+  p, h5, ul > li {
+    font-size: 250%;
+  }
+}
+@media (min-device-width: 668px) {
+  p, h5, ul > li {
+    font-size: 150%;
+  }
 }
 
 /* Meme Page */
