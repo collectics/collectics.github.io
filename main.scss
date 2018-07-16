@@ -6,89 +6,11 @@
 %second-format {
   font-family: "IBM Plex Sans Condensed", sans-serif;
   color: black;
-  text-align: center;
 }
 
 $min-iphone-width: 375px;
 $max-iphone-width: 667px;
-$min-comp-width: 668px;
-
-/* Nav Bar */
-nav {
-  padding-top: 15px;
-     div a {
-       @extend %second-format;
-       border: solid black;
-       font-style: italic;
-       background-color: #ffffef;
-       font-size: 200%;
-       &:hover {
-         font-weight: bold;
-         color: #42b3f4;
-       }
-     }
-}
-
-/* Home Page */
-#index {
-  background-color: #f2fdff;
-}
-#intro {
-  @media (min-device-width: $min-comp-width) {
-    margin-left: 15%;
-    margin-right: 15%;
-  }
-  img {
-    @media (min-device-width: $min-comp-width) {
-      width: 20%;
-      height: 20%;
-    }
-    @media only screen and (min-device-width : $min-iphone-width) and (max-device-width : $max-iphone-width) {
-      /* taken from http://stephen.io/mediaqueries/#iPhone */
-      /* if the screen is an iphone (6, 7, 8) */
-      /* for purposes of this project i won't try to branch out to tablets. new to this responsive design thing */
-      width: 40%;
-      height: 40%;
-    }
-  }
-  margin: 1%;
-  .btn {
-    @extend %main-format;
-    background-color: lightblue;
-    font-size: 150%;
-  }
-}
-.listofthings {
-  font-style: italic;
-}
-#description {
-  @extend %main-format;
-  text-align: center;
-
-}
-
-/* ~~~~ */
-/* All Pages */
-.page-header { /* not for homepage of course */
-  @extend %main-format;
-  text-align: center;
-  small {
-    color: gray;
-  }
-  h1 {
-    font-size: 400%;
-  }
-}
-
-div > p, div > h5, ul > li {
-  @extend %main-format;
-  @media only screen and (min-device-width : $min-iphone-width) and (max-device-width : $max-iphone-width) {
-    font-size: 250%;
-  }
-  @media (min-device-width: $min-comp-width) {
-    font-size: 150%;
-  }
-}
+$min-computer-width: 668px;
 
 /* Meme Page */
 #memepage {
@@ -102,4 +24,33 @@ div > p, div > h5, ul > li {
 /*Projects Page */
 #projects {
   background-color: #ffeffc;
+}
+
+ul > li {
+  @extend %main-format;
+  font-style: italic;
+}
+
+#intro {
+  img {
+    @media only screen and (min-device-width: $min-iphone-width) and (max-device-width: $max-iphone-width) {
+      /* taken from http://stephen.io/mediaqueries/#iPhone */
+      /* if the screen is an iphone (6, 7, 8) */
+      width: 60%;
+    }
+    @media (min-device-width: $min-computer-width) {
+      width: 20%;
+    }
+    height: auto;
+  }
+
+  @media (min-device-width: $min-computer-width) {
+    margin-left: 20%;
+    margin-right: 20%;
+  }
+}
+
+#description {
+  @extend %second-format;
+  text-align: center;
 }

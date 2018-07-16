@@ -1,93 +1,11 @@
-div > p, div > h5, ul > li, .page-header, #description, #intro .btn {
+ul > li {
   font-family: "Roboto", sans-serif;
   color: black;
 }
 
-nav div a {
+#description {
   font-family: "IBM Plex Sans Condensed", sans-serif;
   color: black;
-  text-align: center;
-}
-
-/* Nav Bar */
-nav {
-  padding-top: 15px;
-}
-nav div a {
-  border: solid black;
-  font-style: italic;
-  background-color: #ffffef;
-  font-size: 200%;
-}
-nav div a:hover {
-  font-weight: bold;
-  color: #42b3f4;
-}
-
-/* Home Page */
-#index {
-  background-color: #f2fdff;
-}
-
-#intro {
-  margin: 1%;
-}
-@media (min-device-width: 668px) {
-  #intro {
-    margin-left: 15%;
-    margin-right: 15%;
-  }
-}
-@media (min-device-width: 668px) {
-  #intro img {
-    width: 20%;
-    height: 20%;
-  }
-}
-@media only screen and (min-device-width: 375px) and (max-device-width: 667px) {
-  #intro img {
-    /* taken from http://stephen.io/mediaqueries/#iPhone */
-    /* if the screen is an iphone (6, 7, 8) */
-    /* for purposes of this project i won't try to branch out to tablets. new to this responsive design thing */
-    width: 40%;
-    height: 40%;
-  }
-}
-#intro .btn {
-  background-color: lightblue;
-  font-size: 150%;
-}
-
-.listofthings {
-  font-style: italic;
-}
-
-#description {
-  text-align: center;
-}
-
-/* ~~~~ */
-/* All Pages */
-.page-header {
-  /* not for homepage of course */
-  text-align: center;
-}
-.page-header small {
-  color: gray;
-}
-.page-header h1 {
-  font-size: 400%;
-}
-
-@media only screen and (min-device-width: 375px) and (max-device-width: 667px) {
-  div > p, div > h5, ul > li {
-    font-size: 250%;
-  }
-}
-@media (min-device-width: 668px) {
-  div > p, div > h5, ul > li {
-    font-size: 150%;
-  }
 }
 
 /* Meme Page */
@@ -103,6 +21,36 @@ nav div a:hover {
 /*Projects Page */
 #projects {
   background-color: #ffeffc;
+}
+
+ul > li {
+  font-style: italic;
+}
+
+#intro img {
+  height: auto;
+}
+@media only screen and (min-device-width: 375px) and (max-device-width: 667px) {
+  #intro img {
+    /* taken from http://stephen.io/mediaqueries/#iPhone */
+    /* if the screen is an iphone (6, 7, 8) */
+    width: 60%;
+  }
+}
+@media (min-device-width: 668px) {
+  #intro img {
+    width: 20%;
+  }
+}
+@media (min-device-width: 668px) {
+  #intro {
+    margin-left: 20%;
+    margin-right: 20%;
+  }
+}
+
+#description {
+  text-align: center;
 }
 
 /*# sourceMappingURL=main.css.map */
