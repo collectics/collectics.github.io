@@ -12,31 +12,15 @@ $min-iphone-width: 375px;
 $max-iphone-width: 667px;
 $min-computer-width: 668px;
 
-/* Meme Page */
-#memepage {
-  background: linear-gradient(to right, red,orange,yellow,green,blue,indigo,violet);
-}
-
-/* About Me Page */
-#aboutme {
-  background-color: #eafffb;
-}
-/*Projects Page */
-#projects {
-  background-color: #ffeffc;
-}
-
-ul > li {
-  @extend %main-format;
-  font-style: italic;
-}
+/* ~~~~ */
+/* Intro Page */
 
 #intro {
   img {
     @media only screen and (min-device-width: $min-iphone-width) and (max-device-width: $max-iphone-width) {
       /* taken from http://stephen.io/mediaqueries/#iPhone */
       /* if the screen is an iphone (6, 7, 8) */
-      width: 60%;
+      width: 50%;
     }
     @media (min-device-width: $min-computer-width) {
       width: 20%;
@@ -50,7 +34,43 @@ ul > li {
   }
 }
 
-#description {
+/* All Pages */
+.page-header { /* not for homepage of course */
+  @extend %main-format;
+  text-align: center;
+  small {
+    color: gray;
+  }
+  h1 {
+    font-size: 300%;
+  }
+}
+
+.centered-text-box {
+  /* provided for descriptions */
   @extend %second-format;
   text-align: center;
+}
+
+ul > li {
+  @extend %main-format;
+  font-style: italic;
+}
+
+/* Colors */
+#index {
+  background-color: #f2fdff;
+}
+
+#memepage {
+  background: linear-gradient(to right, red,orange,yellow,green,blue,indigo,violet);
+}
+
+/* About Me Page */
+#aboutme {
+  background-color: #eafffb;
+}
+/*Projects Page */
+#projects {
+  background-color: #ffeffc;
 }

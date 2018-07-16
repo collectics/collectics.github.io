@@ -1,32 +1,15 @@
-ul > li {
+ul > li, .page-header {
   font-family: "Roboto", sans-serif;
   color: black;
 }
 
-#description {
+.centered-text-box {
   font-family: "IBM Plex Sans Condensed", sans-serif;
   color: black;
 }
 
-/* Meme Page */
-#memepage {
-  background: linear-gradient(to right, red, orange, yellow, green, blue, indigo, violet);
-}
-
-/* About Me Page */
-#aboutme {
-  background-color: #eafffb;
-}
-
-/*Projects Page */
-#projects {
-  background-color: #ffeffc;
-}
-
-ul > li {
-  font-style: italic;
-}
-
+/* ~~~~ */
+/* Intro Page */
 #intro img {
   height: auto;
 }
@@ -34,7 +17,7 @@ ul > li {
   #intro img {
     /* taken from http://stephen.io/mediaqueries/#iPhone */
     /* if the screen is an iphone (6, 7, 8) */
-    width: 60%;
+    width: 50%;
   }
 }
 @media (min-device-width: 668px) {
@@ -49,8 +32,44 @@ ul > li {
   }
 }
 
-#description {
+/* All Pages */
+.page-header {
+  /* not for homepage of course */
   text-align: center;
+}
+.page-header small {
+  color: gray;
+}
+.page-header h1 {
+  font-size: 300%;
+}
+
+.centered-text-box {
+  /* provided for descriptions */
+  text-align: center;
+}
+
+ul > li {
+  font-style: italic;
+}
+
+/* Colors */
+#index {
+  background-color: #f2fdff;
+}
+
+#memepage {
+  background: linear-gradient(to right, red, orange, yellow, green, blue, indigo, violet);
+}
+
+/* About Me Page */
+#aboutme {
+  background-color: #eafffb;
+}
+
+/*Projects Page */
+#projects {
+  background-color: #ffeffc;
 }
 
 /*# sourceMappingURL=main.css.map */
