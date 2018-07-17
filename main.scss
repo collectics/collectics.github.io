@@ -12,6 +12,23 @@ $min-iphone-width: 375px;
 $max-iphone-width: 667px;
 $min-computer-width: 668px;
 
+/* Nav Bar */
+nav {
+  padding-top: 15px;
+     a {
+       @extend %second-format;
+       text-align: center;
+       border: solid black;
+       font-style: italic;
+       background-color: #ffffef;
+       font-size: 200%;
+       &:hover {
+         font-weight: bold;
+         color: #42b3f4;
+       }
+     }
+}
+
 /* ~~~~ */
 /* Intro Page */
 
@@ -32,8 +49,23 @@ $min-computer-width: 668px;
     margin-left: 20%;
     margin-right: 20%;
   }
+  p::before {
+    content: "\2192            ";
+  }
 }
 
+table {
+  @extend %main-format;
+  border: 2px solid black;
+  @media (min-device-width: $min-computer-width) {
+    margin-left: 40%;
+    margin-right: 40%;
+  }
+  td, th {
+    border: 1px solid black;
+    padding: 5px;
+  }
+}
 /* All Pages */
 .page-header { /* not for homepage of course */
   @extend %main-format;
