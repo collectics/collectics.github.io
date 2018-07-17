@@ -92,8 +92,27 @@ ul > li {
   background-color: #f2fdff;
 }
 
+/* Meme Page */
 #memepage {
   background: linear-gradient(to right, red, orange, yellow, green, blue, indigo, violet);
+}
+
+/* Makes youtube videos responsive */
+/* Citation: https://css-tricks.com/NetMag/FluidWidthVideo/Article-FluidWidthVideo.php */
+.videoWrapper {
+  position: relative;
+  padding-bottom: 56.25%;
+  /* 16:9 */
+  padding-top: 25px;
+  height: 0;
+}
+
+.videoWrapper iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
 }
 
 /* About Me Page */
